@@ -1,8 +1,9 @@
 import React from 'react';
-import Header from './ui/header';
+import Header from './ui/Header/Header';
 import { ThemeProvider } from '@material-ui/core/styles';
-import theme from './ui/theme'
+import theme from './ui/Theme/theme'
 import {BrowserRouter,Route,Switch} from "react-router-dom";
+import Footer from "./ui/Footer/Footer";
 
 
 
@@ -22,6 +23,7 @@ function App() {
                 <Route  path='/contact' render={()=><div>contact</div>}/>
                 <Route  path='/estimate' render={()=><div>estimate</div>}/>
             </Switch>
+            <Footer/>
         </BrowserRouter>
 
 
