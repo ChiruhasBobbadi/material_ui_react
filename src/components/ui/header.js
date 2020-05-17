@@ -78,15 +78,16 @@ const useStyles = makeStyles(theme => ({
         height: "6em",
         [theme.breakpoints.down('md')]: {
             height: "5em"
+        , zIndex:theme.zIndex.modal+1
         }, [theme.breakpoints.down('xs')]: {
-            height: "3em"
+            height: "3em", zIndex:theme.zIndex.modal+1
         },
 
         textDecoration: "none",
         "&:hover": {
             backgroundColor: "transparent"
-        }
-
+        },
+        zIndex:theme.zIndex.modal+1
     },
     Menu: {
         backgroundColor: theme.palette.primary.main,
@@ -110,20 +111,32 @@ const useStyles = makeStyles(theme => ({
         height: "50px",
         width: "50px"
     },
-    drawer:{
-        backgroundColor:theme.palette.primary.main
+    drawer: {
+        backgroundColor: theme.palette.primary.main
     },
-    drawerItem:{
+    drawerItem: {
         ...theme.typography.tab,
-        color:'white',
-        opacity:0.8
+        color: 'white',
+        opacity: 0.8
     },
-    drawerEstimate:{
-        backgroundColor:theme.palette.secondary.main
+    drawerEstimate: {
+        backgroundColor: theme.palette.secondary.main
     },
-    drawerItemSelected:{
-        opacity:1
+    drawerItemSelected: {
+        opacity: 1
+    },
+    appBar:{
+        [theme.breakpoints.down('md')]: {
+            zIndex:theme.zIndex.modal+1
+        }
+    },
+    selectedDrawerItem:{
+        ...theme.typography.tab,
+        color: 'white',
+        opacity: 1
+
     }
+
 
 }));
 
@@ -171,12 +184,11 @@ export default function Header(props) {
     };
     const handleMenuItemClick = (index) => {
         setSelectedIndex(index);
-        console.log(`${index} selected`);
+
     };
 
     const changeTab = (e, i) => {
         setValue(i);
-
     };
 
     useEffect(() => {
@@ -217,24 +229,15 @@ export default function Header(props) {
         <Fragment>
             <Tabs value={value} onChange={changeTab}
                   className={classes.tabContainer}>
-                <Tab component={Link} className={classes.tab}
-                     label={"Home"} to={"/"}/>
 
-                <Tab
-                    component={Link}
-                    className={classes.tab}
-                    label={"Services"}
-                    to={"/services"}
-                    onMouseOver={handleMenuOpen}
+                {
+                    drawerOptions.map((obj, index) => (
+                        <Tab component={Link} className={classes.tab}
+                             label={obj.name} to={obj.link} key={obj.name + index}
+                             onMouseOver={obj.name === 'Services' ? handleMenuOpen : null}/>
+                    ))
+                }
 
-                />
-
-                <Tab component={Link} className={classes.tab}
-                     label={"Revolution"} to={"/revolution"}/>
-                <Tab component={Link} className={classes.tab}
-                     label={"About Us"} to={"/about"}/>
-                <Tab component={Link} className={classes.tab}
-                     label={"Contact Us"} to={"/contact"}/>
 
             </Tabs>
 
@@ -244,12 +247,13 @@ export default function Header(props) {
                     aria-haspopup="true"
                     className={classes.estimate}
                     component={Link}
+                    onClick={() => setValue(-1)}
                     to={'/estimate'}>Free
                 Estimate </Button>
             <Menu
                 id="simple-menu"
                 anchorEl={anchorEl}
-                openMenu={openMenu}
+                open={openMenu}
                 keepMounted
                 onClose={handleMenuClose}
                 MenuListProps={{onMouseLeave: handleMenuClose}}
@@ -280,16 +284,19 @@ export default function Header(props) {
         <Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer}
                              onClose={() => setOpenDrawer(false)}
-                             onOpen={() => setOpenDrawer(true)} anchor={"right"} classes={{paper:classes.drawer}}>
-                <List disablePadding >
+                             onOpen={() => setOpenDrawer(true)} anchor={"right"} classes={{paper: classes.drawer}}>
+                <div className={classes.toolBarMargin}/>
+                <List disablePadding>
 
                     {drawerOptions.map((obj, index) => (
-                        <ListItem divider button key={obj.name + obj.link} component={Link} to={obj.link} className={obj.name==='Free Estimate'?classes.drawerEstimate:classes.drawerItem}
+                        <ListItem divider button key={obj.name + obj.link} component={Link} to={obj.link}
+                                  className={obj.name === 'Free Estimate' ? classes.drawerEstimate : classes.drawerItem}
                                   onClick={() => {
                                       setOpenDrawer(false);
                                       setValue(index)
                                   }} selected={value === index}>
-                            <ListItemText disableTypography className={value === index?[classes.drawerItem,classes.drawerItemSelected]:classes.drawerItem}>
+                            <ListItemText disableTypography
+                                          className={value === index ? classes.selectedDrawerItem : classes.drawerItem}>
                                 {obj.name}
                             </ListItemText>
 
@@ -309,34 +316,30 @@ export default function Header(props) {
     );
 
 
-    return (
-        <React.Fragment>
-            <ElevationScroll {...props}>
-                <AppBar position={"fixed"}>
-                    <Toolbar disableGutters>
+    return <React.Fragment>
+        <ElevationScroll {...props}>
+            <AppBar position={"fixed"} className={classes.appBar}>
+                <Toolbar disableGutters>
 
-                        <Button component={Link} to="/" className={classes.logoButton} onClick={() => setValue(0)}
-                                disableRipple>
-                            <img src={logo}
-                                 alt={"Company Logo"}
-                                 className={classes.logo}/>
-                        </Button>
+                    <Button component={Link} to="/" className={classes.logoButton} onClick={() => setValue(0)}
+                            disableRipple>
+                        <img src={logo}
+                             alt={"Company Logo"}
+                             className={classes.logo}/>
+                    </Button>
 
-                        {/**
-                         * using media queries to conditionally render
-                         */}
-                        {matches ? drawer : tabs}
-
-
-                    </Toolbar>
-                </AppBar>
-
-            </ElevationScroll>
-            <div className={classes.toolBarMargin}/>
-        </React.Fragment>
+                    {/**
+                     * using media queries to conditionally render
+                     */}
+                    {matches ? drawer : tabs}
 
 
-    )
+                </Toolbar>
+            </AppBar>
+
+        </ElevationScroll>
+        <div className={classes.toolBarMargin}/>
+    </React.Fragment>
 
 
 }
