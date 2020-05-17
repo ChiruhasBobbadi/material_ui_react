@@ -14,6 +14,9 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
 
 
 function ElevationScroll(props) {
@@ -99,13 +102,27 @@ const useStyles = makeStyles(theme => ({
 
 
     },
-    menuIcon:{
-        color:"white",
-        marginLeft:"auto",
+    menuIcon: {
+        color: "white",
+        marginLeft: "auto",
 
-    },drawerIcon:{
-        height:"50px",
-        width:"50px"
+    }, drawerIcon: {
+        height: "50px",
+        width: "50px"
+    },
+    drawer:{
+        backgroundColor:theme.palette.primary.main
+    },
+    drawerItem:{
+        ...theme.typography.tab,
+        color:'white',
+        opacity:0.8
+    },
+    drawerEstimate:{
+        backgroundColor:theme.palette.secondary.main
+    },
+    drawerItemSelected:{
+        opacity:1
     }
 
 }));
@@ -120,6 +137,14 @@ const menuOptions = [{
     name: "Mobile App Development",
     link: "/mobileapps"
 }, {name: "Website Development", link: "/websites"}];
+const drawerOptions = [{name: "Home", link: "/"}, {name: "Services", link: "/services"}, {
+    name: "Revolution",
+    link: "/revolution"
+}, {name: "About Us", link: "/about"}, {name: "Contact Us", link: "/contact"}, {
+    name: "Free Estimate",
+    link: "/estimate"
+}];
+
 export default function Header(props) {
     const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
     const classes = useStyles();
@@ -250,12 +275,28 @@ export default function Header(props) {
         </Fragment>
     );
 
+
     const drawer = (
         <Fragment>
             <SwipeableDrawer disableBackdropTransition={!iOS} disableDiscovery={iOS} open={openDrawer}
                              onClose={() => setOpenDrawer(false)}
-                             onOpen={() => setOpenDrawer(true)} anchor={"right"}>
-                Hello
+                             onOpen={() => setOpenDrawer(true)} anchor={"right"} classes={{paper:classes.drawer}}>
+                <List disablePadding >
+
+                    {drawerOptions.map((obj, index) => (
+                        <ListItem divider button key={obj.name + obj.link} component={Link} to={obj.link} className={obj.name==='Free Estimate'?classes.drawerEstimate:classes.drawerItem}
+                                  onClick={() => {
+                                      setOpenDrawer(false);
+                                      setValue(index)
+                                  }} selected={value === index}>
+                            <ListItemText disableTypography className={value === index?[classes.drawerItem,classes.drawerItemSelected]:classes.drawerItem}>
+                                {obj.name}
+                            </ListItemText>
+
+                        </ListItem>
+                    ))}
+
+                </List>
             </SwipeableDrawer>
             <IconButton onClick={() => setOpenDrawer(!openDrawer)} className={classes.menuIcon}>
                 <MenuIcon className={classes.drawerIcon}/>
