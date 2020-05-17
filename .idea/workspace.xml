@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35b79956-06ce-430a-9be1-cb1301bdd0ff" name="Default Changelist" comment="" />
+    <list default="true" id="35b79956-06ce-430a-9be1-cb1301bdd0ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/header.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,11 +33,39 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ui/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="409">
+              <caret line="260" column="23" lean-forward="true" selection-start-line="260" selection-start-column="23" selection-end-line="260" selection-end-column="23" />
               <folding>
+                <element signature="e#0#59#0" expanded="true" />
                 <element signature="n#!!block;n#ElevationScroll#0" />
+                <element signature="e#653#731#0" />
+                <element signature="e#869#979#0" />
+                <element signature="e#1023#1066#0" />
+                <element signature="e#1356#2884#0" />
+                <element signature="e#1307#1396#0" />
+                <element signature="e#1412#1577#0" />
+                <element signature="e#1687#1740#0" />
+                <element signature="e#1759#1871#0" />
+                <element signature="e#1887#2006#0" />
+                <element signature="e#1963#1997#0" />
+                <element signature="e#2033#2271#0" />
                 <element signature="e#2034#2081#0" />
+                <element signature="e#2083#2155#0" />
+                <element signature="e#2157#2220#0" />
+                <element signature="e#2808#2890#0" />
+                <element signature="e#2956#3742#0" />
+                <element signature="e#3771#4222#0" />
+                <element signature="e#5276#7461#0" />
+                <element signature="e#4441#5482#0" />
+                <element signature="e#4575#4679#0" />
+                <element signature="e#4709#5011#0" />
+                <element signature="e#5041#5161#0" />
+                <element signature="e#5190#5303#0" />
+                <element signature="e#5332#5449#0" />
+                <element signature="e#5512#5941#0" />
+                <element signature="e#6854#7037#0" />
+                <element signature="e#4436#4735#0" />
+                <element signature="e#4571#4701#0" />
               </folding>
             </state>
           </provider>
@@ -150,7 +183,7 @@
       <updated>1589538830206</updated>
       <workItem from="1589538831774" duration="17280000" />
       <workItem from="1589631679413" duration="7343000" />
-      <workItem from="1589717597225" duration="18000" />
+      <workItem from="1589717597225" duration="7627000" />
     </task>
     <task id="LOCAL-00001" summary="navbar">
       <created>1589558759631</created>
@@ -173,14 +206,22 @@
       <option name="project" value="LOCAL" />
       <updated>1589639374660</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="responsive design">
+      <created>1589717760571</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589717760572</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24641000" />
+    <option name="totallyTimeSpent" value="32250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1536" height="864" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -188,15 +229,15 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32957748" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36808237" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36808237" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33462033" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.4169884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -208,7 +249,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="navbar" />
     <MESSAGE value="menu addition" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu addition" />
+    <MESSAGE value="responsive design" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive design" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -258,11 +300,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ui/header.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="409">
+          <caret line="260" column="23" lean-forward="true" selection-start-line="260" selection-start-column="23" selection-end-line="260" selection-end-column="23" />
           <folding>
+            <element signature="e#0#59#0" expanded="true" />
             <element signature="n#!!block;n#ElevationScroll#0" />
+            <element signature="e#653#731#0" />
+            <element signature="e#869#979#0" />
+            <element signature="e#1023#1066#0" />
+            <element signature="e#1356#2884#0" />
+            <element signature="e#1307#1396#0" />
+            <element signature="e#1412#1577#0" />
+            <element signature="e#1687#1740#0" />
+            <element signature="e#1759#1871#0" />
+            <element signature="e#1887#2006#0" />
+            <element signature="e#1963#1997#0" />
+            <element signature="e#2033#2271#0" />
             <element signature="e#2034#2081#0" />
+            <element signature="e#2083#2155#0" />
+            <element signature="e#2157#2220#0" />
+            <element signature="e#2808#2890#0" />
+            <element signature="e#2956#3742#0" />
+            <element signature="e#3771#4222#0" />
+            <element signature="e#5276#7461#0" />
+            <element signature="e#4441#5482#0" />
+            <element signature="e#4575#4679#0" />
+            <element signature="e#4709#5011#0" />
+            <element signature="e#5041#5161#0" />
+            <element signature="e#5190#5303#0" />
+            <element signature="e#5332#5449#0" />
+            <element signature="e#5512#5941#0" />
+            <element signature="e#6854#7037#0" />
+            <element signature="e#4436#4735#0" />
+            <element signature="e#4571#4701#0" />
           </folding>
         </state>
       </provider>
