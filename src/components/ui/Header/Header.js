@@ -66,10 +66,10 @@ export default function Header(props) {
     const matches = useMediaQuery(theme.breakpoints.down('md'));
     const [openDrawer, setOpenDrawer] = useState(false);
 
-    const [value, setValue] = useState(0);
+
     const [anchorEl, setAnchorEl] = useState(null);
     const [openMenu, setOpenMenu] = useState(false);
-    const [selectedIndex, setSelectedIndex] = useState(0);
+
 
 
     const handleMenuOpen = (e) => {
@@ -79,54 +79,55 @@ export default function Header(props) {
     const handleMenuClose = () => {
         setAnchorEl(null);
         setOpenMenu(false);
-        setValue(1);
+        props.setValue(1);
     };
     const handleMenuItemClick = (index) => {
-        setSelectedIndex(index);
+        props.setSelectedIndex(index);
 
     };
 
     const changeTab = (e, i) => {
-        setValue(i);
+        props.setValue(i);
     };
 
     useEffect(() => {
-        if (window.location.pathname === '/' && value !== 0)
-            setValue(0);
-        else if (window.location.pathname === '/services' && value !== 1)
-            setValue(1);
-        else if (window.location.pathname === '/revolution' && value !== 2)
-            setValue(2);
-        else if (window.location.pathname === '/about' && value !== 3)
-            setValue(3);
-        else if (window.location.pathname === '/contact' && value !== 4)
-            setValue(4);
-        else if (window.location.pathname === '/estimate' && value !== 5)
-            setValue(5);
-        else if (window.location.pathname === '/customSoftware' && value !== 1)
-            setValue(1);
-        else if (window.location.pathname === '/mobileapps' && value !== 1)
-            setValue(1);
-        else if (window.location.pathname === '/websites' && value !== 1)
-            setValue(1);
+        if (window.location.pathname === '/' && props.value !== 0)
+            props.setValue(0);
+        else if (window.location.pathname === '/services' && props.value !== 1)
+            props.setValue(1);
+        else if (window.location.pathname === '/revolution' && props.value !== 2)
+            props.setValue(2);
+        else if (window.location.pathname === '/about' && props.value !== 3)
+            props.setValue(3);
+        else if (window.location.pathname === '/contact' && props.value !== 4)
+            props.setValue(4);
+        else if (window.location.pathname === '/estimate' && props.value !== 5)
+            props.setValue(5);
+        else if (window.location.pathname === '/customSoftware' && props.value !== 1)
+            props.setValue(1);
+        else if (window.location.pathname === '/mobileapps' && props.value !== 1)
+            props.setValue(1);
+        else if (window.location.pathname === '/websites' && props.value !== 1)
+            props.setValue(1);
 
-    }, [value]);
+    }, [props.value]);
+
     useEffect(() => {
-        if (window.location.pathname === '/services' && selectedIndex !== 0)
-            setSelectedIndex(0);
-        else if (window.location.pathname === '/customSoftware' && selectedIndex !== 1)
-            setSelectedIndex(1);
-        else if (window.location.pathname === '/mobileapps' && selectedIndex !== 2)
-            setSelectedIndex(2);
-        else if (window.location.pathname === '/websites' && selectedIndex !== 3)
-            setSelectedIndex(3);
+        if (window.location.pathname === '/services' && props.selectedIndex !== 0)
+            props.setSelectedIndex(0);
+        else if (window.location.pathname === '/customSoftware' && props.selectedIndex !== 1)
+            props.setSelectedIndex(1);
+        else if (window.location.pathname === '/mobileapps' && props.selectedIndex !== 2)
+            props.setSelectedIndex(2);
+        else if (window.location.pathname === '/websites' && props.selectedIndex !== 3)
+            props.setSelectedIndex(3);
 
-    }, [selectedIndex]);
+    }, [props.selectedIndex]);
 
 
     const tabs = (
         <Fragment>
-            <Tabs value={value} onChange={changeTab}
+            <Tabs value={props.value} onChange={changeTab}
                   className={classes.tabContainer}>
 
                 {
@@ -146,7 +147,7 @@ export default function Header(props) {
                     aria-haspopup="true"
                     className={classes.estimate}
                     component={Link}
-                    onClick={() => setValue(-1)}
+                    onClick={() => props.setValue(-1)}
                     to={'/estimate'}>Free
                 Estimate </Button>
             <Menu
@@ -164,7 +165,7 @@ export default function Header(props) {
                               className={classes.menuItem}
                               key={obj.name}
                               to={obj.link}
-                              selected={index === selectedIndex && value === 1}
+                              selected={index === props.selectedIndex && props.value === 1}
                               onClick={() => {
                                   handleMenuClose();
                                   handleMenuItemClick(index)
@@ -192,10 +193,10 @@ export default function Header(props) {
                                   className={obj.name === 'Free Estimate' ? classes.drawerEstimate : classes.drawerItem}
                                   onClick={() => {
                                       setOpenDrawer(false);
-                                      setValue(index)
-                                  }} selected={value === index}>
+                                      props.setValue(index)
+                                  }} selected={props.value === index}>
                             <ListItemText disableTypography
-                                          className={value === index ? classes.selectedDrawerItem : classes.drawerItem}>
+                                          className={props.value === index ? classes.selectedDrawerItem : classes.drawerItem}>
                                 {obj.name}
                             </ListItemText>
 
@@ -220,7 +221,7 @@ export default function Header(props) {
             <AppBar position={"fixed"} className={classes.appBar}>
                 <Toolbar disableGutters>
 
-                    <Button component={Link} to="/" className={classes.logoButton} onClick={() => setValue(0)}
+                    <Button component={Link} to="/" className={classes.logoButton} onClick={() => props.setValue(0)}
                             disableRipple>
                         <img src={logo}
                              alt={"Company Logo"}

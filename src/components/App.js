@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './ui/Header/Header';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './ui/Theme/theme'
@@ -8,10 +8,12 @@ import Footer from "./ui/Footer/Footer";
 
 
 function App() {
+    const [value, setValue] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <ThemeProvider theme={theme}>
         <BrowserRouter>
-            <Header/>
+            <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
             <Switch>
                 <Route exact path='/' render={()=><div>Home</div>}/>
                 <Route  path='/services' render={()=><div>Services</div>}/>
@@ -23,7 +25,7 @@ function App() {
                 <Route  path='/contact' render={()=><div>contact</div>}/>
                 <Route  path='/estimate' render={()=><div>estimate</div>}/>
             </Switch>
-            <Footer/>
+            <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
         </BrowserRouter>
 
 
