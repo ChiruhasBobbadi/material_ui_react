@@ -4,6 +4,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './ui/Theme/theme'
 import {BrowserRouter,Route,Switch} from "react-router-dom";
 import Footer from "./ui/Footer/Footer";
+import LandingPage from "./LandingPage";
 
 
 
@@ -15,7 +16,7 @@ function App() {
         <BrowserRouter>
             <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
             <Switch>
-                <Route exact path='/' render={()=><div>Home</div>}/>
+                <Route exact path='/' component={LandingPage}/>
                 <Route  path='/services' render={()=><div>Services</div>}/>
                 <Route  path='/customSoftware' render={()=><div>customSoftware</div>}/>
                 <Route  path='/mobileapps' render={()=><div>mobileapps</div>}/>

@@ -41,13 +41,14 @@ const useStyles = makeStyles(theme => ({
         width: "4em",
         height: "4em",
         [theme.breakpoints.down("xs")]:{
-            width: "2.5em",
-            height: "2.5em",
+            width: "2em",
+            height: "2em",
         }
     },social:{
         position: "absolute",
         marginTop:"-6em",
-        right:"1em"
+        right:"1.5em"
+
     }
 
 
@@ -66,7 +67,7 @@ const Footer = (props) => {
                 <Grid container className={classes.mainContainer} justify={"center"} spacing={2}>
 
                     <Grid item className={classes.gridItem}>
-                        <Grid container direction={"column"} spacing={2}>
+                        <Grid container direction={"column"}  spacing={2}>
                             <Grid item className={classes.link} component={Link} to={'/'}
                                   onClick={() => props.setValue(0)}>
                                 Home
@@ -168,7 +169,7 @@ const Footer = (props) => {
 
 
             <img src={footerAdornment} className={classes.adornment} />
-            <Grid container spacing={3} justify={"flex-end"} className={classes.social}>
+            <Grid container spacing={2} justify={"flex-end"} className={classes.social}>
 
                 <Grid item component={"a"} href="https://www.facebook.com" rel={"noopener noreferrer"} target={"_blank"}>
                     <img src={facebook} alt="" className={classes.icon}/>
