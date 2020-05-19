@@ -8,6 +8,7 @@ import ButtonArrow from "./ui/button_arrow/ButtonArrow";
 import Typography from "@material-ui/core/Typography";
 import useTheme from "@material-ui/core/styles/useTheme";
 import customSoftwareIcon from '../assets/Custom Software Icon.svg';
+import {useMediaQuery} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({
     animation:{
@@ -28,20 +29,20 @@ const useStyles = makeStyles(theme => ({
             backgroundColor: theme.palette.secondary.dark
         }
     },learnMorebtn:{
-        borderColor:theme.palette.primary.main,
-        borderWidth:2,
-        color:theme.palette.primary.main,
-        textTransform:"none",
-        borderRadius: 50,
-        fontFamily:"Roboto",
-        fontWeight:"bold",
         fontsize:"0.9rem",
-
-
-
+        ...theme.typography.learnButton
     },maincontainer:{
         marginTop: "5em",
-
+    },icon:{
+        marginLeft:"2em",
+        [theme.breakpoints.down('sm')]:{
+            marginLeft:"0"
+        }
+    },serviceContainer:{
+        marginTop:"12em",
+        [theme.breakpoints.down('sm')]:{
+            padding:25
+        }
     }
 }));
 
@@ -55,11 +56,11 @@ const defaultOptions = {
 };
 
 
-export default function LandingPage(props) {
+export default function LandingPage() {
     const theme = useTheme();
 
     const classes = useStyles();
-
+    const matchesSM = useMediaQuery(theme.breakpoints.down('sm'));
     return <Fragment>
 
         <Grid container direction={"column"} className={classes.maincontainer}>
@@ -96,15 +97,15 @@ export default function LandingPage(props) {
             </Grid>
             {/*Service*/}
             <Grid item>
-                <Grid Container direction={"row"} >
+                <Grid container direction={"row"} className={classes.serviceContainer} justify={matchesSM?"center":"flex-start"}>
 
-                <Grid item>
+                <Grid item style={{marginLeft:matchesSM?"0":"5em",textAlign:matchesSM?"center":"flex-start"}}>
                     <Typography variant={"h4"}>
                     Custom Software Development
                     </Typography>
                     <Typography variant={"subtitle1"}>
                         Save Energy. Save Time. Save Money
-                    </Typography>
+                    </Typography><br/>
                     <Typography variant={"subtitle1"}>
                        complete Digital Solutions, from investigation to <span>Celebration</span>
                     </Typography>
@@ -116,16 +117,11 @@ export default function LandingPage(props) {
 
                 </Grid>
                     <Grid item>
-                        <img src={customSoftwareIcon} alt="custom software icon"/>
+                        <img className={classes.icon} style={{marginTop:matchesSM?"2em":"0"}} src={customSoftwareIcon} alt="custom software icon"/>
                     </Grid>
 
                 </Grid>
-                <Grid container direction={"row"} justify={"flex-end"}>
 
-                </Grid>
-                <Grid Container direction={"row"} justify={"flex-start"}>
-
-                </Grid>
 
             </Grid>
 

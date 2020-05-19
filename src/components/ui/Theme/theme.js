@@ -3,7 +3,7 @@ import {createMuiTheme} from '@material-ui/core/styles';
 
 const arcBlue = "#0B72B9";
 const arcOrange = "#FFBA60";
-
+const arcGrey = '#868686';
 
 const theme = createMuiTheme({
     palette: {
@@ -34,6 +34,25 @@ const theme = createMuiTheme({
             fontSize: "2.5rem",
             color:arcBlue,
             lineHeight:1.5
+        },h4:{
+        fontFamily:'Raleway',
+            fontSize:"1.75rem",
+            color:arcBlue,
+            fontWeight:700
+        },subtitle1:{
+            color:arcGrey,
+            fontSize:'1.25rem',
+            fontWeight:300
+
+        },learnButton:{
+            borderColor:arcBlue,
+            borderWidth:2,
+            color:arcBlue,
+            textTransform:"none",
+            borderRadius: 50,
+            fontFamily:"Roboto",
+            fontWeight:"bold",
+
         }
     }
 });

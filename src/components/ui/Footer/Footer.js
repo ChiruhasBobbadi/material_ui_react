@@ -93,7 +93,7 @@ const Footer = (props) => {
 
                             <Grid item className={classes.link} component={Link} to={'/mobileapps'}
                                   onClick={() => props.setSelectedIndex(2)}>
-                                Mobile App Development
+                               IOS/Android App Development
                             </Grid>
 
 
