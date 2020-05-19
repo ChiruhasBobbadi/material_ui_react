@@ -46,7 +46,7 @@ const menuOptions = [{
     name: "Custom Software Development",
     link: "/customSoftware"
 }, {
-    name: "Mobile App Development",
+    name: "IOS/Android App Development",
     link: "/mobileapps"
 }, {name: "Website Development", link: "/websites"}];
 const drawerOptions = [{name: "Home", link: "/"}, {name: "Services", link: "/services"}, {

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b79956-06ce-430a-9be1-cb1301bdd0ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Theme/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Theme/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Header/Header.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,23 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/Theme/theme.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1424">
-              <caret line="49" column="25" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+            <state relative-caret-position="409">
+              <caret line="198" column="73" selection-start-line="198" selection-start-column="73" selection-end-line="198" selection-end-column="73" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+                <element signature="e#1767#3156#0" />
+                <element signature="e#3464#4751#0" />
+                <element signature="e#4791#6184#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
+            <state relative-caret-position="186">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#0#64#0" expanded="true" />
-                <element signature="e#1767#3156#0" />
+                <element signature="e#0#59#0" expanded="true" />
+                <element signature="n#!!block;n#ElevationScroll#0" />
               </folding>
             </state>
           </provider>
@@ -56,6 +60,7 @@
       <find>App</find>
       <find>sm</find>
       <find>mobile</find>
+      <find>Mobile</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -75,7 +80,6 @@
         <option value="$PROJECT_DIR$/src/components/ui/Header/style.js" />
         <option value="$PROJECT_DIR$/src/components/ui/button_arrow/BtnArrow.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/ui/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/Landing_Page/style.js" />
         <option value="$PROJECT_DIR$/src/components/Landing_Page/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/components/landingPage/LandingPage.js" />
@@ -86,6 +90,7 @@
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/ui/landing/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Theme/theme.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage.js" />
       </list>
     </option>
@@ -263,11 +268,18 @@
       <option name="project" value="LOCAL" />
       <updated>1589796700023</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="custom Software">
+      <created>1589897257481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589897257481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65035000" />
+    <option name="totallyTimeSpent" value="66589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -308,7 +320,8 @@
     <MESSAGE value="menu bar for mobile addition" />
     <MESSAGE value="navbar with responsive design done!!" />
     <MESSAGE value="footer with material grid" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer with material grid" />
+    <MESSAGE value="custom Software" />
+    <option name="LAST_COMMIT_MESSAGE" value="custom Software" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -349,19 +362,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="1451" column="38" selection-start-line="1451" selection-start-column="38" selection-end-line="1451" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!block;n#ElevationScroll#0" />
-            <element signature="e#2826#3826#0" />
-            <element signature="e#3865#4384#0" />
-            <element signature="e#4439#6341#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -414,16 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-            <element signature="e#1503#6935#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -438,13 +428,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#!!block;n#ElevationScroll#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="99" column="65" selection-start-line="99" selection-start-column="65" selection-end-line="99" selection-end-column="65" />
+        <state relative-caret-position="409">
+          <caret line="198" column="73" selection-start-line="198" selection-start-column="73" selection-end-line="198" selection-end-column="73" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <element signature="e#0#68#0" expanded="true" />
             <element signature="e#1767#3156#0" />
+            <element signature="e#3464#4751#0" />
+            <element signature="e#4791#6184#0" />
           </folding>
         </state>
       </provider>
