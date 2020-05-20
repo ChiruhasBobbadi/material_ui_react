@@ -11,8 +11,15 @@ import useTheme from "@material-ui/core/styles/useTheme";
 import customSoftwareIcon
     from '../assets/Custom Software Icon.svg';
 import {useMediaQuery} from "@material-ui/core";
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
 import MobileIcon from '../assets/mobileIcon.svg';
 import websiteIcon from '../assets/websiteIcon.svg';
+import revolutionBackground
+    from '../assets/repeatingBackground.svg';
+ import infoBackground from '../assets/infoBackground.svg'
+
+
 const useStyles = makeStyles(theme => ({
     animation:{
         minWidth:"21em",
@@ -31,7 +38,8 @@ const useStyles = makeStyles(theme => ({
         "&:hover":{
             backgroundColor: theme.palette.secondary.dark
         }
-    },learnMorebtn:{
+    },
+    learnMorebtn:{
         fontsize:"0.9rem",
         marginTop:"2em",
         ...theme.typography.learnButton,
@@ -48,11 +56,62 @@ const useStyles = makeStyles(theme => ({
             marginLeft: "0",
             marginRight: "0"
         }
-    },serviceContainer:{
-        marginTop:"7em",
+    },
+    serviceContainer:{
+        marginTop: "12em",
         [theme.breakpoints.down('sm')]:{
-            marginTop:"2em",
+            marginTop: "4em",
             padding:25
+        }
+    }, revDiv: {
+        backgroundImage: `url(${revolutionBackground})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100%",
+        width: "100%"
+    },
+    revCard: {
+        marginTop: "12em",
+        marginBottom: "12em", padding: "5em",
+        boxShadow: theme.shadows[10],
+        borderRadius: 20, [theme.breakpoints.down('sm')]: {
+            marginTop: "4em",
+            marginBottom: "4em",
+            paddingTop: "3em",
+            paddingBottom: "3em",
+            paddingRight: 0,
+            paddingLeft: 0,
+            marginRight: "2em",
+            marginLeft: "2em"
+        }
+    },
+    contactBtn:{
+
+        ...theme.typography.learnButton,
+        fontsize:"0.1rem",
+        marginTop:"2em",
+        color:"#ffffff",
+        borderColor:"white",
+        borderWidth:1.5,
+        [theme.breakpoints.down('sm')]:{
+            marginTop:"1em"
+        }
+    },infoBackground:{
+        backgroundImage: `url(${infoBackground})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        height: "100%",
+        width: "100%"
+    },infoContainer:{
+        marginTop:"12em",
+        marginBottom: "12em",
+        padding: "5rem",
+        [theme.breakpoints.down('sm')]: {
+            marginTop: "4em",
+            marginBottom: "4em",
+
         }
     }
 }));
@@ -83,7 +142,9 @@ export default function LandingPage() {
                         <Typography variant={"h2"} align={"center"}>Bringing West Coast Technology <br/> To the midwest</Typography>
                         <Grid container justify={"center"} spacing={2}>
                             <Grid  item>
-                                <Button variant={"contained"} className={classes.estimate}>
+                                <Button style={{marginTop: matchesSM ? "1em" : "2em"}}
+                                        variant={"contained"}
+                                        className={classes.estimate}>
                                 Free Estimate
                                 </Button>
                             </Grid>
@@ -108,10 +169,13 @@ export default function LandingPage() {
             </Grid>
             {/*Service*/}
             <Grid item>
-                <Grid container direction={"row"} className={classes.serviceContainer} justify={matchesSM?"center":"flex-start"}>
+                <Grid container
+                      direction={"row"}
+                      className={classes.serviceContainer}
+                      justify={matchesSM ? "center" : "flex-start"}>
 
                 <Grid item style={{marginLeft:matchesSM?"0":"5em",textAlign:matchesSM?"center":"flex-start"}}>
-                    <Typography variant={"h4"}>
+                    <Typography variant={"h3"}>
                     Custom Software Development
                     </Typography>
                     <Typography variant={"subtitle1"}>
@@ -214,6 +278,96 @@ export default function LandingPage() {
                              style={{marginTop: matchesSM ? "2em" : "0"}}
                              src={websiteIcon}
                              alt="Website Icon"/>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+            {/*Card*/}
+            <Grid item
+                  className={classes.revDiv}
+                  style={{marginTop: matchesSM ? "4em" : "12em"}}>
+                <Grid container
+                      direction={"column"}
+                      alignItems={"center"}
+                      justify={"center"}
+                      style={{
+                          width: "100%",
+                          height: "100%"
+                      }}
+                >
+                    <Card className={classes.revCard}>
+                        <CardContent>
+                            <Grid container
+                                  direction={"column"}>
+                                <Grid item
+                                      style={{textAlign: "center"}}>
+                                    <Typography variant={"h4"}>
+                                        The Revolution
+                                    </Typography>
+                                    <Typography variant={"subtitle1"}
+                                                style={{marginTop: "1em"}}>
+                                        Visionary insights
+                                        coupled with
+                                        cutting-edge
+                                        technology is
+                                        a <br/>
+                                        recipe for
+                                        revolution
+
+                                    </Typography>
+                                    <Button variant={"outlined"}
+                                            className={classes.learnMorebtn}>
+                                        Learn More
+                                        &nbsp;
+                                        <ButtonArrow width={"15px"}
+                                                     height={"15px"}
+                                                     fill={theme.palette.primary.main}/>
+                                    </Button>
+
+                                </Grid>
+                            </Grid>
+                        </CardContent>
+                    </Card>
+
+
+                </Grid>
+
+            </Grid>
+            {/*Information*/}
+            <Grid item className={classes.infoBackground}>
+                <Grid container direction={"row"} justify={matchesSM?"center":"space-between"}
+                       className={classes.infoContainer} >
+                    <Grid item style={{textAlign:"center"}}>
+                        <Typography variant={"h2"} style={{color:"#ffffff"}}>
+                            About Us
+                        </Typography>
+                        <Typography variant={"subtitle2"} style={{fontSize:"1rem"}}>
+                        Let's get personal
+                        </Typography>
+                        <Button variant={"outlined"}
+                                className={classes.contactBtn}>
+                            Learn More
+                            &nbsp;
+                            <ButtonArrow width={"15px"}
+                                         height={"15px"}
+                                         fill={"#FFFFFF"}/>
+                        </Button>
+                    </Grid>
+                    <Grid item style={{textAlign:"center",marginTop:matchesSM?"4em":"0em"}}>
+                        <Typography variant={"h2"} style={{color:"#ffffff"}}>
+                            Contact Us
+                        </Typography>
+                        <Typography variant={"subtitle2"} style={{fontSize:"1rem"}}>
+                            Say Hello
+                        </Typography>
+                        <Button variant={"outlined"}
+                                className={classes.contactBtn}>
+                            Learn More
+                            &nbsp;
+                            <ButtonArrow width={"15px"}
+                                         height={"15px"}
+                                         fill={"#FFFFFF"}/>
+                        </Button>
                     </Grid>
 
                 </Grid>

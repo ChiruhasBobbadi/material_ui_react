@@ -34,13 +34,25 @@ const theme = createMuiTheme({
             fontSize: "2.5rem",
             color:arcBlue,
             lineHeight:1.5
-        },h4:{
+        },h3:{
+            fontFamily: "Raleway",
+            fontWeight: 600,
+            fontSize: "2.5rem",
+            color:arcBlue,
+            lineHeight:1.5
+        }
+        ,h4:{
         fontFamily:'Raleway',
             fontSize:"1.75rem",
             color:arcBlue,
             fontWeight:700
         },subtitle1:{
             color:arcGrey,
+            fontSize:'1.25rem',
+            fontWeight:300
+
+        },subtitle2:{
+            color:"white",
             fontSize:'1.25rem',
             fontWeight:300
 

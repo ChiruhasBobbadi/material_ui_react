@@ -26,7 +26,8 @@ function App() {
                 <Route  path='/contact' render={()=><div>contact</div>}/>
                 <Route  path='/estimate' render={()=><div>estimate</div>}/>
             </Switch>
-            <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
+              <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
+
         </BrowserRouter>
 
 
