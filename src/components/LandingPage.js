@@ -18,6 +18,7 @@ import websiteIcon from '../assets/websiteIcon.svg';
 import revolutionBackground
     from '../assets/repeatingBackground.svg';
  import infoBackground from '../assets/infoBackground.svg'
+import Call from "./ui/call-to-action/Call";
 
 
 const useStyles = makeStyles(theme => ({
@@ -371,6 +372,10 @@ export default function LandingPage() {
                     </Grid>
 
                 </Grid>
+            </Grid>
+
+            <Grid item>
+                <Call/>
             </Grid>
 
 

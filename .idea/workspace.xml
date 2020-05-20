@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b79956-06ce-430a-9be1-cb1301bdd0ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/Theme/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Theme/theme.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,99 +29,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="359" column="80" selection-start-line="359" selection-start-column="80" selection-end-line="359" selection-end-column="80" />
+            <state relative-caret-position="516">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="41" selection-end-column="5" />
               <folding>
                 <element signature="e#0#68#0" expanded="true" />
-                <element signature="e#737#845#0" />
-                <element signature="e#855#1162#0" />
-                <element signature="e#1087#1156#0" />
-                <element signature="e#1310#1349#0" />
-                <element signature="e#1371#1404#0" />
-                <element signature="e#1410#1580#0" />
-                <element signature="e#1505#1574#0" />
-                <element signature="e#1774#1910#0" />
-                <element signature="e#1841#1904#0" />
-                <element signature="e#2322#2575#0" />
-                <element signature="e#1763#1912#0" />
-                <element signature="e#2135#2188#0" />
-                <element signature="e#2482#2498#0" />
-                <element signature="e#2234#3623#0" />
-                <element signature="e#2540#3923#0" />
-                <element signature="e#2638#3638#0" />
-                <element signature="e#2811#3610#0" />
-                <element signature="e#2887#3157#0" />
-                <element signature="e#2932#3121#0" />
-                <element signature="e#3186#3577#0" />
-                <element signature="e#3231#3541#0" />
-                <element signature="e#3659#3898#0" />
-                <element signature="e#3704#3870#0" />
-                <element signature="e#3957#3968#0" />
-                <element signature="e#3662#4946#0" />
-                <element signature="e#4010#5246#0" />
-                <element signature="e#4141#5013#0" />
-                <element signature="e#4256#4365#0" />
-                <element signature="e#4386#4513#0" />
-                <element signature="e#4539#4705#0" />
-                <element signature="e#4726#4988#0" />
-                <element signature="e#5034#5221#0" />
-                <element signature="e#5280#5295#0" />
-                <element signature="e#4989#6923#0" />
-                <element signature="e#5337#7223#0" />
-                <element signature="e#5540#6910#0" />
-                <element signature="e#5584#5756#0" />
-                <element signature="e#5783#5900#0" />
-                <element signature="e#5925#6111#0" />
-                <element signature="e#6141#6464#0" />
-                <element signature="e#6489#6881#0" />
-                <element signature="e#6686#6847#0" />
-                <element signature="e#6931#7198#0" />
-                <element signature="e#6967#7170#0" />
-                <element signature="e#7257#7268#0" />
-                <element signature="e#6962#8665#0" />
-                <element signature="e#7310#8965#0" />
-                <element signature="e#7515#8655#0" />
-                <element signature="e#7559#7732#0" />
-                <element signature="e#7759#7870#0" />
-                <element signature="e#7895#8033#0" />
-                <element signature="e#8063#8209#0" />
-                <element signature="e#8234#8626#0" />
-                <element signature="e#8431#8592#0" />
-                <element signature="e#8676#8940#0" />
-                <element signature="e#8712#8912#0" />
-                <element signature="e#8999#9007#0" />
-                <element signature="e#9562#9666#0" />
-                <element signature="e#9711#11587#0" />
-                <element signature="e#10232#10364#0" />
-                <element signature="e#10401#10930#0" />
-                <element signature="e#10967#11443#0" />
-                <element signature="e#11212#11397#0" />
-                <element signature="e#13137#13867#0" />
+                <element signature="e#2678#2937#0" />
+                <element signature="e#3416#3565#0" />
+                <element signature="e#5442#6796#0" />
+                <element signature="e#6839#8773#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/Theme/theme.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ui/call-to-action/Call.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="868">
+              <caret line="69" column="103" selection-start-line="69" selection-start-column="103" selection-end-line="69" selection-end-column="103" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
-                <element signature="n#!!block;n#ElevationScroll#0" />
+                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#523#571#0" />
               </folding>
             </state>
           </provider>
@@ -144,6 +74,7 @@
       <find>sm</find>
       <find>mobile</find>
       <find>Mobile</find>
+      <find>free es</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,7 +105,11 @@
         <option value="$PROJECT_DIR$/src/components/ui/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/ui/Theme/theme.js" />
+        <option value="$PROJECT_DIR$/src/components/call-to-action/callAction.js" />
+        <option value="$PROJECT_DIR$/src/components/call-to-action/Action.js" />
+        <option value="$PROJECT_DIR$/src/components/call-to-action/Call.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" />
       </list>
     </option>
   </component>
@@ -192,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,7 +150,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,9 +173,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components\ui" />
       <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components\ui\landing" />
       <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components" />
-      <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components\ui" />
       <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components\landingPage" />
       <recent name="C:\Users\PC\WebstormProjects\material_ui\src\components\Landing_Page" />
     </key>
@@ -287,7 +222,7 @@
       <workItem from="1589717597225" duration="16670000" />
       <workItem from="1589737628114" duration="4913000" />
       <workItem from="1589792496307" duration="11608000" />
-      <workItem from="1589963173895" duration="7774000" />
+      <workItem from="1589963173895" duration="10969000" />
     </task>
     <task id="LOCAL-00001" summary="navbar">
       <created>1589558759631</created>
@@ -366,11 +301,18 @@
       <option name="project" value="LOCAL" />
       <updated>1589898776538</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="info section">
+      <created>1589971385390</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589971385391</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75464000" />
+    <option name="totallyTimeSpent" value="78659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -413,7 +355,8 @@
     <MESSAGE value="footer with material grid" />
     <MESSAGE value="custom Software" />
     <MESSAGE value="services section" />
-    <option name="LAST_COMMIT_MESSAGE" value="services section" />
+    <MESSAGE value="info section" />
+    <option name="LAST_COMMIT_MESSAGE" value="info section" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/package.json">
@@ -489,23 +432,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/callAction.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/Action.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#!!block;n#ElevationScroll#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <element signature="n#!!block;n#ElevationScroll#0" />
           </folding>
         </state>
       </provider>
@@ -519,74 +468,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="359" column="80" selection-start-line="359" selection-start-column="80" selection-end-line="359" selection-end-column="80" />
+        <state relative-caret-position="516">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="e#0#68#0" expanded="true" />
-            <element signature="e#737#845#0" />
-            <element signature="e#855#1162#0" />
-            <element signature="e#1087#1156#0" />
-            <element signature="e#1310#1349#0" />
-            <element signature="e#1371#1404#0" />
-            <element signature="e#1410#1580#0" />
-            <element signature="e#1505#1574#0" />
-            <element signature="e#1774#1910#0" />
-            <element signature="e#1841#1904#0" />
-            <element signature="e#2322#2575#0" />
-            <element signature="e#1763#1912#0" />
-            <element signature="e#2135#2188#0" />
-            <element signature="e#2482#2498#0" />
-            <element signature="e#2234#3623#0" />
-            <element signature="e#2540#3923#0" />
-            <element signature="e#2638#3638#0" />
-            <element signature="e#2811#3610#0" />
-            <element signature="e#2887#3157#0" />
-            <element signature="e#2932#3121#0" />
-            <element signature="e#3186#3577#0" />
-            <element signature="e#3231#3541#0" />
-            <element signature="e#3659#3898#0" />
-            <element signature="e#3704#3870#0" />
-            <element signature="e#3957#3968#0" />
-            <element signature="e#3662#4946#0" />
-            <element signature="e#4010#5246#0" />
-            <element signature="e#4141#5013#0" />
-            <element signature="e#4256#4365#0" />
-            <element signature="e#4386#4513#0" />
-            <element signature="e#4539#4705#0" />
-            <element signature="e#4726#4988#0" />
-            <element signature="e#5034#5221#0" />
-            <element signature="e#5280#5295#0" />
-            <element signature="e#4989#6923#0" />
-            <element signature="e#5337#7223#0" />
-            <element signature="e#5540#6910#0" />
-            <element signature="e#5584#5756#0" />
-            <element signature="e#5783#5900#0" />
-            <element signature="e#5925#6111#0" />
-            <element signature="e#6141#6464#0" />
-            <element signature="e#6489#6881#0" />
-            <element signature="e#6686#6847#0" />
-            <element signature="e#6931#7198#0" />
-            <element signature="e#6967#7170#0" />
-            <element signature="e#7257#7268#0" />
-            <element signature="e#6962#8665#0" />
-            <element signature="e#7310#8965#0" />
-            <element signature="e#7515#8655#0" />
-            <element signature="e#7559#7732#0" />
-            <element signature="e#7759#7870#0" />
-            <element signature="e#7895#8033#0" />
-            <element signature="e#8063#8209#0" />
-            <element signature="e#8234#8626#0" />
-            <element signature="e#8431#8592#0" />
-            <element signature="e#8676#8940#0" />
-            <element signature="e#8712#8912#0" />
-            <element signature="e#8999#9007#0" />
-            <element signature="e#9562#9666#0" />
-            <element signature="e#9711#11587#0" />
-            <element signature="e#10232#10364#0" />
-            <element signature="e#10401#10930#0" />
-            <element signature="e#10967#11443#0" />
-            <element signature="e#11212#11397#0" />
-            <element signature="e#13137#13867#0" />
+            <element signature="e#2678#2937#0" />
+            <element signature="e#3416#3565#0" />
+            <element signature="e#5442#6796#0" />
+            <element signature="e#6839#8773#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/call-to-action/Call.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="868">
+          <caret line="69" column="103" selection-start-line="69" selection-start-column="103" selection-end-line="69" selection-end-column="103" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#523#571#0" />
           </folding>
         </state>
       </provider>
