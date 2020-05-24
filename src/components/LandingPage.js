@@ -19,6 +19,7 @@ import revolutionBackground
     from '../assets/repeatingBackground.svg';
  import infoBackground from '../assets/infoBackground.svg'
 import Call from "./ui/call-to-action/Call";
+import {Link} from "react-router-dom";
 
 
 const useStyles = makeStyles(theme => ({
@@ -127,7 +128,7 @@ const defaultOptions = {
 };
 
 
-export default function LandingPage() {
+export default function LandingPage(props) {
     const theme = useTheme();
 
     const classes = useStyles();
@@ -145,12 +146,14 @@ export default function LandingPage() {
                             <Grid  item>
                                 <Button style={{marginTop: matchesSM ? "1em" : "2em"}}
                                         variant={"contained"}
-                                        className={classes.estimate}>
+                                        className={classes.estimate}
+                                        onClick={()=>props.setValue(5)}
+                                component={Link} to={'/estimate'}>
                                 Free Estimate
                                 </Button>
                             </Grid>
                             <Grid  item>
-                                <Button variant={"outlined"} className={classes.learnMorebtn}>
+                                <Button  onClick={()=>props.setValue(2)} component={Link} to={'/revolution'} variant={"outlined"} className={classes.learnMorebtn}>
                                     Learn More
                                     &nbsp;
                                     <ButtonArrow width={"15px"} height={"15px"} fill={theme.palette.primary.main}/>
@@ -185,7 +188,7 @@ export default function LandingPage() {
                     <Typography variant={"subtitle1"}>
                        complete Digital Solutions, from investigation to <span>Celebration</span>
                     </Typography>
-                    <Button variant={"outlined"} className={classes.learnMorebtn}>
+                    <Button  onClick={()=>{props.setValue(1);props.setSelectedIndex(1)}} variant={"outlined"} className={classes.learnMorebtn} component={Link} to={'/customSoftware'}>
                         Learn More
                         &nbsp;
                         <ButtonArrow width={"15px"} height={"15px"} fill={theme.palette.primary.main}/>
@@ -224,8 +227,8 @@ export default function LandingPage() {
                             <br/>}with either mobile
                             platform.
                         </Typography>
-                        <Button variant={"outlined"}
-                                className={classes.learnMorebtn}>
+                        <Button  onClick={()=>{props.setValue(1);props.setSelectedIndex(2)}} variant={"outlined"}
+                                className={classes.learnMorebtn} component={Link} to={'/mobileapps'}>
                             Learn More
                             &nbsp;
                             <ButtonArrow width={"15px"}
@@ -264,8 +267,8 @@ export default function LandingPage() {
                         <Typography variant={"subtitle1"}>
                             Optimised for Search Engines, built for speed
                         </Typography>
-                        <Button variant={"outlined"}
-                                className={classes.learnMorebtn}>
+                        <Button onClick={()=>{props.setValue(1);props.setSelectedIndex(3)}} variant={"outlined"}
+                                className={classes.learnMorebtn} component={Link} to={'/websites'}>
                             Learn More
                             &nbsp;
                             <ButtonArrow width={"15px"}
@@ -316,8 +319,8 @@ export default function LandingPage() {
                                         revolution
 
                                     </Typography>
-                                    <Button variant={"outlined"}
-                                            className={classes.learnMorebtn}>
+                                    <Button onClick={()=>props.setValue(2)}  variant={"outlined"}
+                                            className={classes.learnMorebtn} component={Link} to={'/revolution'}>
                                         Learn More
                                         &nbsp;
                                         <ButtonArrow width={"15px"}
@@ -345,8 +348,8 @@ export default function LandingPage() {
                         <Typography variant={"subtitle2"} style={{fontSize:"1rem"}}>
                         Let's get personal
                         </Typography>
-                        <Button variant={"outlined"}
-                                className={classes.contactBtn}>
+                        <Button onClick={()=>props.setValue(3)}  variant={"outlined"}
+                                className={classes.contactBtn} component={Link} to={'/about'}>
                             Learn More
                             &nbsp;
                             <ButtonArrow width={"15px"}
@@ -361,8 +364,8 @@ export default function LandingPage() {
                         <Typography variant={"subtitle2"} style={{fontSize:"1rem"}}>
                             Say Hello
                         </Typography>
-                        <Button variant={"outlined"}
-                                className={classes.contactBtn}>
+                        <Button onClick={()=>props.setValue(4)} variant={"outlined"}
+                                className={classes.contactBtn} component={Link} to={'/contact'}>
                             Learn More
                             &nbsp;
                             <ButtonArrow width={"15px"}
@@ -375,7 +378,8 @@ export default function LandingPage() {
             </Grid>
 
             <Grid item>
-                <Call/>
+                <Call setValue={props.setValue}
+                      setSelectedIndex={props.setSelectedIndex}/>
             </Grid>
 
 

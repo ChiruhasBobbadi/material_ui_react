@@ -1,6 +1,7 @@
-import {makeStyles, useTheme} from '@material-ui/core/styles/index';
-import React, {Fragment} from 'react';
-import footerAdornment from '../../../assets/Footer Adornment.svg';
+import {makeStyles} from '@material-ui/core/styles/index';
+import React from 'react';
+import footerAdornment
+    from '../../../assets/Footer Adornment.svg';
 import Grid from '@material-ui/core/Grid';
 import {Link} from "react-router-dom";
 import {Hidden} from "@material-ui/core";
@@ -57,11 +58,9 @@ const useStyles = makeStyles(theme => ({
 const Footer = (props) => {
 
     const classes = useStyles();
-    const theme = useTheme();
 
-    return <Fragment>
 
-        <footer className={classes.footer}>
+    return <div className={classes.footer}>
 
             <Hidden mdDown>
                 <Grid container className={classes.mainContainer} justify={"center"} spacing={2}>
@@ -181,8 +180,8 @@ const Footer = (props) => {
                     <img src={twitter} alt="" className={classes.icon}/>
                 </Grid>
             </Grid>
-        </footer>
-    </Fragment>
+    </div>
+
 
 
 };

@@ -49,13 +49,16 @@ const menuOptions = [{
     name: "IOS/Android App Development",
     link: "/mobileapps"
 }, {name: "Website Development", link: "/websites"}];
+
 const drawerOptions = [{name: "Home", link: "/"}, {name: "Services", link: "/services"}, {
     name: "Revolution",
     link: "/revolution"
-}, {name: "About Us", link: "/about"}, {name: "Contact Us", link: "/contact"}, {
+}, {name: "About Us", link: "/about"}, {name: "Contact Us", link: "/contact"} ];
+
+const freeEstimate = {
     name: "Free Estimate",
     link: "/estimate"
-}];
+};
 
 export default function Header(props) {
     const iOS = process.browser && /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -132,6 +135,7 @@ export default function Header(props) {
 
                 {
                     drawerOptions.map((obj, index) => (
+
                         <Tab component={Link} className={classes.tab}
                              label={obj.name} to={obj.link} key={obj.name + index}
                              onMouseOver={obj.name === 'Services' ? handleMenuOpen : null}/>
@@ -188,7 +192,8 @@ export default function Header(props) {
                 <div className={classes.toolBarMargin}/>
                 <List disablePadding>
 
-                    {drawerOptions.map((obj, index) => (
+                    {
+                        [...drawerOptions,freeEstimate].map((obj, index) => (
                         <ListItem divider button key={obj.name + obj.link} component={Link} to={obj.link}
                                   className={obj.name === 'Free Estimate' ? classes.drawerEstimate : classes.drawerItem}
                                   onClick={() => {

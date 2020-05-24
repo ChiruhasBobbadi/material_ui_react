@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b79956-06ce-430a-9be1-cb1301bdd0ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="401">
+              <caret line="24" column="75" selection-start-line="23" selection-start-column="51" selection-end-line="24" selection-end-column="75" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -29,30 +32,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#0#68#0" expanded="true" />
-                <element signature="e#2678#2937#0" />
-                <element signature="e#3416#3565#0" />
-                <element signature="e#5442#6796#0" />
-                <element signature="e#6839#8773#0" />
-              </folding>
+            <state relative-caret-position="930">
+              <caret line="366" column="63" lean-forward="true" selection-start-line="366" selection-start-column="32" selection-end-line="366" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ui/call-to-action/Call.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="868">
-              <caret line="69" column="103" selection-start-line="69" selection-start-column="103" selection-end-line="69" selection-end-column="103" />
+            <state relative-caret-position="317">
+              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
-                <element signature="e#523#571#0" />
               </folding>
             </state>
           </provider>
@@ -100,14 +95,14 @@
         <option value="$PROJECT_DIR$/src/components/ui/landingPage/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/components/ui/landingPage/style.js" />
         <option value="$PROJECT_DIR$/src/components/ui/hello/hello.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" />
         <option value="$PROJECT_DIR$/src/components/ui/landing/LandingPage.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/App.js" />
-        <option value="$PROJECT_DIR$/src/components/ui/Theme/theme.js" />
         <option value="$PROJECT_DIR$/src/components/call-to-action/callAction.js" />
         <option value="$PROJECT_DIR$/src/components/call-to-action/Action.js" />
         <option value="$PROJECT_DIR$/src/components/call-to-action/Call.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Theme/theme.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/ui/Footer/Footer.js" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/LandingPage.js" />
         <option value="$PROJECT_DIR$/src/components/ui/call-to-action/Call.js" />
       </list>
@@ -127,29 +122,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="material_ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="material_ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="material_ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="material_ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="material_ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="material_ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -223,6 +197,9 @@
       <workItem from="1589737628114" duration="4913000" />
       <workItem from="1589792496307" duration="11608000" />
       <workItem from="1589963173895" duration="10969000" />
+      <workItem from="1590208528010" duration="80000" />
+      <workItem from="1590210654214" duration="12000" />
+      <workItem from="1590294630692" duration="5470000" />
     </task>
     <task id="LOCAL-00001" summary="navbar">
       <created>1589558759631</created>
@@ -312,7 +289,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78659000" />
+    <option name="totallyTimeSpent" value="84221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -422,72 +399,100 @@
     <entry file="file://$PROJECT_DIR$/src/components/ui/landingPage/LandingPage.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ui/hello/hello.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ui/landing/LandingPage.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Footer/Footer.js">
+    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/callAction.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/Action.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Theme/theme.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="217">
+          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4008">
+          <caret line="175" column="33" lean-forward="true" selection-start-line="175" selection-start-column="33" selection-end-line="175" selection-end-column="33" />
           <folding>
-            <element signature="e#0#68#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="n#!!block;n#ElevationScroll#0" />
+            <element signature="e#2876#3876#0" />
+            <element signature="e#3915#4434#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/callAction.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/call-to-action/Action.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Header/Header.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ui/Footer/Footer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="62">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <element signature="n#!!block;n#ElevationScroll#0" />
+            <element signature="e#513#637#0" />
+            <element signature="e#654#878#0" />
+            <element signature="e#752#790#0" />
+            <element signature="e#832#870#0" />
+            <element signature="e#899#935#0" />
+            <element signature="e#943#1091#0" />
+            <element signature="e#1103#1132#0" />
+            <element signature="e#1140#1296#0" />
+            <element signature="e#1226#1290#0" />
+            <element signature="e#1304#1390#0" />
+            <element signature="e#1604#6039#0" />
+            <element signature="e#1707#2114#0" />
+            <element signature="e#1772#2086#0" />
+            <element signature="e#1851#2054#0" />
+            <element signature="e#2137#3461#0" />
+            <element signature="e#2202#3433#0" />
+            <element signature="e#2280#2584#0" />
+            <element signature="e#2365#2505#0" />
+            <element signature="e#2615#2863#0" />
+            <element signature="e#2893#3136#0" />
+            <element signature="e#3167#3401#0" />
+            <element signature="e#3483#4651#0" />
+            <element signature="e#3548#4623#0" />
+            <element signature="e#3626#3849#0" />
+            <element signature="e#3880#4095#0" />
+            <element signature="e#4125#4344#0" />
+            <element signature="e#4375#4591#0" />
+            <element signature="e#4674#5571#0" />
+            <element signature="e#4739#5543#0" />
+            <element signature="e#4817#5029#0" />
+            <element signature="e#5060#5271#0" />
+            <element signature="e#5301#5509#0" />
+            <element signature="e#5593#6014#0" />
+            <element signature="e#5658#5984#0" />
+            <element signature="e#5736#5952#0" />
+            <element signature="e#6148#6901#0" />
+            <element signature="e#6242#6445#0" />
+            <element signature="e#6462#6665#0" />
+            <element signature="e#6682#6881#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="401">
+          <caret line="24" column="75" selection-start-line="23" selection-start-column="51" selection-end-line="24" selection-end-column="75" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/Theme/theme.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ui/call-to-action/Call.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="26" />
+        <state relative-caret-position="317">
+          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/LandingPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#68#0" expanded="true" />
-            <element signature="e#2678#2937#0" />
-            <element signature="e#3416#3565#0" />
-            <element signature="e#5442#6796#0" />
-            <element signature="e#6839#8773#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ui/call-to-action/Call.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="868">
-          <caret line="69" column="103" selection-start-line="69" selection-start-column="103" selection-end-line="69" selection-end-column="103" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-            <element signature="e#523#571#0" />
-          </folding>
+        <state relative-caret-position="930">
+          <caret line="366" column="63" lean-forward="true" selection-start-line="366" selection-start-column="32" selection-end-line="366" selection-end-column="63" />
         </state>
       </provider>
     </entry>

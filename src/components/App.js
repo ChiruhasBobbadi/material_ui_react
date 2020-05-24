@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
 import Header from './ui/Header/Header';
-import { ThemeProvider } from '@material-ui/core/styles';
+import {ThemeProvider} from '@material-ui/core/styles';
 import theme from './ui/Theme/theme'
-import {BrowserRouter,Route,Switch} from "react-router-dom";
-import Footer from "./ui/Footer/Footer";
+import {
+    BrowserRouter,
+    Route,
+    Switch
+} from "react-router-dom";
 import LandingPage from "./LandingPage";
-
 
 
 function App() {
@@ -16,7 +18,11 @@ function App() {
         <BrowserRouter>
             <Header value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
             <Switch>
-                <Route exact path='/' component={LandingPage}/>
+                <Route exact
+                       path='/'
+                       render={(props) =>
+                           <LandingPage {...props} setValue={setValue}
+                                        setSelectedIndex={setSelectedIndex}/>}/>
                 <Route  path='/services' render={()=><div>Services</div>}/>
                 <Route  path='/customSoftware' render={()=><div>customSoftware</div>}/>
                 <Route  path='/mobileapps' render={()=><div>mobileapps</div>}/>
@@ -26,8 +32,8 @@ function App() {
                 <Route  path='/contact' render={()=><div>contact</div>}/>
                 <Route  path='/estimate' render={()=><div>estimate</div>}/>
             </Switch>
-              <Footer value={value} setValue={setValue} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} />
-
+            {/*<Footer value={value} setValue={setValue}  setSelectedIndex={setSelectedIndex} />
+*/}
         </BrowserRouter>
 
 
