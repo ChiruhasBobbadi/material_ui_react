@@ -25,47 +25,51 @@ const theme = createMuiTheme({
             fontWeight: 600,
             fontSize: "1rem",
         },
-        estimate:{
-            fontFamily:'Roboto',
-            textTransform:"none",
-        },h2:{
+        estimate: {
+            fontFamily: 'Roboto',
+            textTransform: "none",
+        }, h2: {
             fontFamily: "Raleway",
             fontWeight: 600,
             fontSize: "2.5rem",
-            color:arcBlue,
-            lineHeight:1.5
-        },h3:{
+            color: arcBlue,
+            lineHeight: 1.5
+        }, h3: {
             fontFamily: "Raleway",
             fontWeight: 600,
             fontSize: "2.5rem",
-            color:arcBlue,
-            lineHeight:1.5
+            color: arcBlue,
+            lineHeight: 1.5
         }
-        ,h4:{
-        fontFamily:'Raleway',
-            fontSize:"1.75rem",
-            color:arcBlue,
-            fontWeight:700
-        },subtitle1:{
-            color:arcGrey,
-            fontSize:'1.25rem',
-            fontWeight:300
+        , h4: {
+            fontFamily: 'Raleway',
+            fontSize: "1.75rem",
+            color: arcBlue,
+            fontWeight: 700
+        }, subtitle1: {
+            color: arcGrey,
+            fontSize: '1.25rem',
+            fontWeight: 300
 
-        },subtitle2:{
-            color:"white",
-            fontSize:'1.25rem',
-            fontWeight:300
+        }, subtitle2: {
+            color: "white",
+            fontSize: '1.25rem',
+            fontWeight: 300
 
-        },learnButton:{
-            borderColor:arcBlue,
-            borderWidth:2,
-            color:arcBlue,
-            textTransform:"none",
+        }, learnButton: {
+            borderColor: arcBlue,
+            borderWidth: 2,
+            color: arcBlue,
+            textTransform: "none",
             borderRadius: 50,
-            fontFamily:"Roboto",
-            fontWeight:"bold",
+            fontFamily: "Roboto",
+            fontWeight: "bold",
 
-        }
+        },body1:{
+            fontSize:'1.25rem',
+            color:arcGrey,
+            fontWeight:300
+         }
     }
 });
 
