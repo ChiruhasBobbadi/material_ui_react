@@ -38,12 +38,19 @@ const useStyles = makeStyles(theme => ({
             paddingTop: '2em',
             paddingBottom: '10em',
             [theme.breakpoints.down('md')]:{
-                paddingLeft: "2em",
-                paddingRight: '2em',
-                paddingTop: '1em',
+                padding:0,
+                paddingTop: '2em',
                 paddingBottom: '5em',
+                marginRight:'4em',
+
             }
+        },customSoftware:{
+        [theme.breakpoints.down('md')]:{
+            marginLeft:"auto",
+            marginRight:"auto",
+            marginTop:'2em'
         }
+    }
 
 
 }));
@@ -69,7 +76,7 @@ const CustomSoftware = (props) => {
     return <Grid container direction={"column"}
                  className={classes.rootContainer}>
 
-        <Grid item container direction={'row'}>
+        <Grid item container direction={'row'} className={classes.customSoftware}>
             <Grid item className={classes.arrowContainer} >
                 <Hidden mdDown>
 
@@ -125,13 +132,12 @@ const CustomSoftware = (props) => {
                     </IconButton>
                 </Hidden>
             </Grid>
-            <Grid/>
         </Grid>
 
-        <Grid item container direction={"row"} justify={"center"} style={{marginTop: '15em', marginBottom: '20em'}}>
+        <Grid item container direction={"row"} justify={"center"} style={{marginTop:matches?'4em':'15em', marginBottom: matches?'8em':'20em'}}>
             <Grid item container direction={"column"} md style={{maxWidth: '40em'}} alignItems={"center"}>
                 <Grid item>
-                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined}}>
+                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined,marginTop:matches?'2em':0}}>
                         Save Energy
                     </Typography>
                 </Grid>
@@ -141,7 +147,7 @@ const CustomSoftware = (props) => {
             </Grid>
             <Grid container item direction={"column"} md style={{maxWidth: '40em'}} alignItems={"center"}>
                 <Grid item>
-                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined}}>
+                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined,marginTop:matches?'2em':0}}>
                         Save Time
                     </Typography>
                 </Grid>
@@ -151,7 +157,7 @@ const CustomSoftware = (props) => {
             </Grid>
             <Grid item container direction={"column"} md style={{maxWidth: '40em'}} alignItems={"center"}>
                 <Grid item>
-                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined}}>
+                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : undefined,marginTop:matches?'2em':0}}>
                         Save Money
                     </Typography>
                 </Grid>
@@ -194,32 +200,32 @@ const CustomSoftware = (props) => {
             </Grid>
 
 
-            <Grid item md style={{textAlign: matches ? 'center' : undefined}}>
+            <Grid item md >
 
                 <Lottie options={animOptions(documentsAnimation)}
-                        style={{maxWidth: 275, maxHeight: 275, marginRight: '-2em'}}/>
+                        style={{maxWidth: 400, maxHeight: 400, minWidth: 200, minHeight: 200,alignItems:matches?'center':undefined,marginRight:matches?0:'-2em',marginLeft:'5em'}}/>
 
             </Grid>
 
 
         </Grid>
-        <Grid item container direction={"row"} justify={"space-between"} style={{marginTop: '15em'}}>
+        <Grid item container direction={"row"} justify={"space-between"} style={{marginTop: matches?'8em':'15em'}}>
             <Grid item md>
 
                 <Lottie options={animOptions(scaleAnimation)}
-                        style={{maxWidth: 275, maxHeight: 275, marginLeft: '2em'}}/>
+                        style={{maxWidth:400, maxHeight: 400, minWidth: 200, minHeight: 200, marginLeft: '2em',alignItems:matches?'center':undefined}}/>
 
             </Grid>
             <Grid item className={classes.itemContainer} md>
 
                 <Grid item>
-                    <Typography variant={"h4"} align={"right"}>
+                    <Typography variant={"h4"} style={{textAlign: matches ? 'center' : "right",marginTop:matches?"1em":0}}>
                         Scale </Typography>
                 </Grid>
 
 
                 <Grid item style={{marginTop: '2em'}}>
-                    <Typography variant={"body1"} align={"right"} paragraph>
+                    <Typography variant={"body1"} style={{textAlign: matches ? 'center' : "right"}} paragraph>
                         Whether you're a large brand, just getting started, or taking off right now, our application
                         architecture ensures pain-free growth and reliability
 
@@ -233,19 +239,19 @@ const CustomSoftware = (props) => {
 
         </Grid>
 
-        <Grid item container direction={"row"} style={{marginTop: '20em', marginBottom: '20em'}}>
+        <Grid item container direction={"row"} style={{marginTop:matches?'10em':'20em', marginBottom:matches?'10em': '20em'}}>
             <Grid item container direction={'column'} alignItems={"center"}>
                 <Grid item align={"center"}>
                     <img src={roots} height={"450em"} width={"450em"}/>
                 </Grid>
                 <Grid item className={classes.itemContainer}>
-                    <Typography variant={"h4"} align={"center"} style={{marginTop: '1em'}}>
+                    <Typography variant={"h4"} style={{textAlign: 'center',marginTop: '1em'}} >
                         Root-Cause Analysis
                     </Typography>
-                    <Typography variant={'body1'} align={"center"} paragraph style={{marginTop: '2em'}}>
-                        Many problems are merely symptoms oflarger, underlying issues.
+                    <Typography variant={'body1'}  paragraph style={{textAlign: 'center',marginTop: '2em'}} >
+                        Many problems are merely symptoms of larger, underlying issues.
                     </Typography>
-                    <Typography variant={'body1'} align={"center"} paragraph>We cana help you thoroughly examine all
+                    <Typography variant={'body1'} style={{textAlign: 'center'}}  paragraph>We cana help you thoroughly examine all
                         areas of your business to
                         develop a holistic plan for the most effective implementation of technology.</Typography>
                 </Grid>
@@ -259,13 +265,13 @@ const CustomSoftware = (props) => {
             <Grid item className={classes.itemContainer} md>
 
 
-                <Grid item md>
+                <Grid item md style={{textAlign:matches?'center':undefined}}>
                     <Typography variant={"h4"}>
                         Automation </Typography>
                 </Grid>
 
 
-                <Grid item style={{marginTop: '2em'}}>
+                <Grid item  style={{textAlign:matches?"center":undefined,marginTop: '2em'}} >
                     <Typography variant={"body1"} paragraph>
                         Why waste time when you don't have to?
                     </Typography>
@@ -283,33 +289,33 @@ const CustomSoftware = (props) => {
             <Grid item md>
 
                 <Lottie options={animOptions(automationAnimation)}
-                        style={{maxWidth: 400, maxHeight: 400, minWidth: 200, minHeight: 200, marginRight: '-2em'}}/>
+                        style={{maxWidth: 400, maxHeight: 400, minWidth: 200, minHeight: 200, textAlign:matches?'center':undefined}}/>
 
             </Grid>
 
 
         </Grid>
-        <Grid item container direction={"row"} justify={"space-around"} style={{marginTop: '15em'}}>
+        <Grid item container direction={"row"} justify={"space-around"} style={{marginTop:matches? '8em': '15em'}}>
             <Grid item md>
 
                 <Lottie options={animOptions(uxAnimation)}
-                        style={{maxWidth: 155, maxHeight: 400, minWidth: 200, minHeight: 200, marginLeft: '2em'}}/>
+                        style={{maxWidth: 155, maxHeight: 400, minWidth: 200, minHeight: 200, marginLeft: '2em',alignItems:matches?'center':undefined}}/>
 
             </Grid>
             <Grid item className={classes.itemContainer} md>
 
                 <Grid item>
-                    <Typography variant={"h4"} align={"right"}>
+                    <Typography variant={"h4"} style={{textAlign:matches?'center':'right',marginTop:matches?"1em":0}}>
                         Use Experience Design </Typography>
                 </Grid>
 
 
-                <Grid item style={{marginTop: '2em'}}>
-                    <Typography variant={"body1"} align={"right"} paragraph>A good design that isn't usable isn't a good
+                <Grid item style={{textAlign:matches?'center':'right',marginTop:'2em'}}>
+                    <Typography variant={"body1"}  paragraph>A good design that isn't usable isn't a good
                         design.</Typography>
-                    <Typography variant={"body1"} align={"right"} paragraph>So why are so many pieces of software
+                    <Typography variant={"body1"}  paragraph>So why are so many pieces of software
                         complicated, confusing,and frustrating?</Typography>
-                    <Typography variant={"body1"} align={"right"} paragraph>By prioritizing users and the real ways they
+                    <Typography variant={"body1"}  paragraph>By prioritizing users and the real ways they
                         interact with technology we're able to develop unique, personable experiences that solve
                         problems rather than create new ones.</Typography>
 
