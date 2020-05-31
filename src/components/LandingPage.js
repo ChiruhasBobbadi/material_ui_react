@@ -376,7 +376,7 @@ export default function LandingPage(props) {
 
                 </Grid>
             </Grid>
-
+            {/*Call to Action*/}
             <Grid item>
                 <Call setValue={props.setValue}
                       setSelectedIndex={props.setSelectedIndex}/>

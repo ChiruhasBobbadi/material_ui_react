@@ -8,6 +8,7 @@ import {
     Switch
 } from "react-router-dom";
 import LandingPage from "./LandingPage";
+import Services from "./ui/services/services";
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
                        render={(props) =>
                            <LandingPage {...props} setValue={setValue}
                                         setSelectedIndex={setSelectedIndex}/>}/>
-                <Route  path='/services' render={()=><div>Services</div>}/>
+                <Route  path='/services' render={(props)=><Services {...props} setValue={setValue}
+                                                               setSelectedIndex={setSelectedIndex} />}/>
                 <Route  path='/customSoftware' render={()=><div>customSoftware</div>}/>
                 <Route  path='/mobileapps' render={()=><div>mobileapps</div>}/>
                 <Route  path='/websites' render={()=><div>websites</div>}/>
